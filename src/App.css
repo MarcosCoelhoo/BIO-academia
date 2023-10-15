@@ -1,5 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Tomorrow:wght@500;600;700;800&display=swap');
+
+:root {
+  --principal-50: #f2ffe5;
+  --principal-100: #dfffc7;
+  --principal-200: #c1ff96;
+  --principal-300: #99fc5a;
+  --principal-400: #74f328;
+  --principal-500: #53d909;
+  --principal-600: #3cae02;
+  --principal-700: #2f8407;
+  --principal-800: #29680c;
+  --principal-900: #24580f;
+  --principal-950: #0e3102;
+
+  --black-50: #f6f6f6;
+  --black-100: #efefef;
+  --black-200: #dcdcdc;
+  --black-300: #bdbdbd;
+  --black-400: #989898;
+  --black-500: #7c7c7c;
+  --black-600: #656565;
+  --black-700: #525252;
+  --black-800: #464646;
+  --black-900: #292929;
+  --black-950: #0D0D0D;
+
+  --principal-gradient: linear-gradient(to bottom, var(--principal-500), var(--principal-600));
+  --black-gradient: linear-gradient(to bottom, var(--black-500), var(--black-700));
+
+  --shadow-12: 12px 12px 0 0 var(var(--principal-500));
+  --shadow-8: 8px 8px 0 0 var(var(--principal-500));
+
+  --font-title: 'Tomorrow', sans-serif;
+  --font-text: 'Poppins', sans-serif;
+
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+}
+
+body {
+  background: linear-gradient(to top, );
 }
