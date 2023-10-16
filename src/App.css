@@ -43,5 +43,5 @@
 }
 
 body {
-  background: linear-gradient(to top, );
+  background: var(--black-950);
 }
