@@ -44,4 +44,27 @@
 
 body {
   background: var(--black-950);
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  height: 1100px;
 }
+
+li, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sectionContainer {
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative
+}
+
+/* @media (max-width: 81.25rem) {
+  .sectionContainer {
+    padding: 0 1.5rem;
+  }
+} */
