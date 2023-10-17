@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-bottom: 2px solid var(--black-900);
+}
+
+.logo {
+  width: 5.75rem;
+}
+
+.logo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1rem;
+}
+
+.close {
+  display: none;
+}
+
+.link {
+  font-family: var(--font-text);
+  color: var(--black-50);
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: '';
+  width: 20%;
+  height: 0.25rem;
+  background: var(--principal-500);
+  display: block;
+  position: absolute;
+  bottom: -0.5rem;
+  transition: width .3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.highlight {
+  font-family: var(--font-title);
+  font-weight: 800;
+  text-transform: uppercase;
+  background: var(--principal-gradient);
+  color: var(--black-950);
+  padding: 0.75rem 1rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 50%);
+  transition: clip-path .3s ease;
+  letter-spacing: 0.0313rem;
+
+}
+
+.highlight:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 50%);
+
+}
+
+.iconMenu {
+  width: 2.75rem;
+  height: 2.75rem;
+  fill: var(--principal-500);
+  cursor: pointer;
+  user-select: none;
+  display: none;
+}
+
+@media (max-width: 50rem) {
+  .container {
+    right: 0;
+  }
+
+  .logo {
+    width: 4.5rem;
+  }
+
+  .links {
+    position: absolute;
+    right: -65%;
+    top: 0px;
+    opacity: 0;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background: var(--black-900);
+    padding: 1.5rem;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    max-width: 20.5rem;
+    transition: all .3s ;
+  }
+  
+  .links.open {
+    opacity: 1;
+    right: -0%;
+
+  }
+ 
+  .close {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 12px;
+    background: var(--principal-gradient);
+    cursor: pointer;
+    user-select: none;    
+
+  }
+
+  .close p {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5008px;
+    color: var(--black-950);
+  }
+
+  .close svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  
+  .link,
+  .highlight {
+    font-size: 1.25rem;
+  }
+
+  .link::after {
+    right: 0;
+
+    bottom: -1.5rem;
+    width: 90%;
+  }
+
+  .iconMenu {
+    display: initial;
+  }
+}
