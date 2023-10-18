@@ -59,8 +59,26 @@ a {
 
 .sectionContainer {
   max-width: 90rem;
+  height: fit-content;
   margin: 0 auto;
-  position: relative
+  position: relative;
+}
+
+.buttonPrincipal {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 50%);
+  background: var(--principal-gradient);
+  color: var(--black-950);
+  padding: 0.75rem 1rem;
+  transition: clip-path .3s ease;
+  letter-spacing: 0.0313rem;
+  font-family: var(--font-title);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.buttonPrincipal:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 50%);
+
 }
 
 /* @media (max-width: 81.25rem) {
