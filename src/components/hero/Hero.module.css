@@ -4,6 +4,8 @@
   justify-content: space-between;
   background: url('../../assets/images/hero-background.png') center center no-repeat;
   background-size: cover;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .imgHero {
@@ -80,6 +82,8 @@
   justify-content: space-between;
   background: var(--black-900);
   padding: 0 1.5rem;
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .logo {

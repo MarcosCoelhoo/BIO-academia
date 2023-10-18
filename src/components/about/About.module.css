@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.image {
+  max-width: 34.5rem;
+}
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: var(--shadow-12);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.button {
+  color: var(--black-950);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.button span {
+  font-weight: 700;
+}
+
+@media (max-width: 53.5rem) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+}
