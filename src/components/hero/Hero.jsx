@@ -1,7 +1,11 @@
 import React from 'react';
 import styles from './Hero.module.css';
 import imgHero from '../../assets/images/hero-person.png';
-
+import { ReactComponent as LogoSklz } from '../../assets/icons/SKLZ-logo.svg';
+import { ReactComponent as LogoOptimumNutrition } from '../../assets/icons/optimum-nutrition-logo.svg';
+import { ReactComponent as LogoNaturesWay } from '../../assets/icons/natures-way-logo.svg';
+import { ReactComponent as LogoLifeFitness } from '../../assets/icons/life-fitness-logo.svg';
+import { ReactComponent as LogoDymatize } from '../../assets/icons/dymatize-logo.svg';
 const Hero = () => {
   return (
     <section className="sectionContainer">
@@ -33,6 +37,23 @@ const Hero = () => {
           <img src={imgHero} alt="Person hero section" />
         </div>
       </div>
+      <ul className={styles.brandings}>
+        <li className={styles.logo}>
+          <LogoSklz />
+        </li>
+        <li className={styles.logo}>
+          <LogoOptimumNutrition />
+        </li>
+        <li className={styles.logo}>
+          <LogoNaturesWay />
+        </li>
+        <li className={styles.logo}>
+          <LogoLifeFitness />
+        </li>
+        <li className={styles.logo}>
+          <LogoDymatize />
+        </li>
+      </ul>
     </section>
   );
 };

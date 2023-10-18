@@ -45,8 +45,7 @@
 body {
   background: var(--black-950);
   overflow-x: hidden;
-  /* overflow-y: hidden; */
-  height: 1100px;
+  margin-bottom: 600px;
 }
 
 li, ul {
