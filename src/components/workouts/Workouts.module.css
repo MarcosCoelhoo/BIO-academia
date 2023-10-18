@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+
+.workoutsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4rem 2rem;
+}
+
+.training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image {
+  max-width: 24.75rem;
+}
+
+.image img {
+  box-shadow: var(--shadow-8);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--principal-500);
+  letter-spacing: 0.125rem;
+
+}
+
+.button {
+  padding: 0.75rem 1rem;
+  background: var(--principal-500);
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--black-950);
+  transition: all .3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 53.5rem) {
+  .workoutsList {
+    justify-content: center;
+  }
+}
