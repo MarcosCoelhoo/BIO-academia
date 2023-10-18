@@ -28,8 +28,8 @@
   --principal-gradient: linear-gradient(to bottom, var(--principal-500), var(--principal-600));
   --black-gradient: linear-gradient(to bottom, var(--black-500), var(--black-700));
 
-  --shadow-12: 12px 12px 0 0 var(var(--principal-500));
-  --shadow-8: 8px 8px 0 0 var(var(--principal-500));
+  --shadow-12: 12px 12px 0 0 var(--principal-500);
+  --shadow-8: 8px 8px 0 0 var(--principal-500);
 
   --font-title: 'Tomorrow', sans-serif;
   --font-text: 'Poppins', sans-serif;
@@ -48,6 +48,16 @@ body {
   margin-bottom: 600px;
 }
 
+main {
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 90rem;
+  margin: 0 auto;
+
+}
+
 li, ul {
   list-style: none;
 }
@@ -57,10 +67,12 @@ a {
 }
 
 .sectionContainer {
+  width: 100%;
   max-width: 90rem;
-  height: fit-content;
   margin: 0 auto;
   position: relative;
+  border: 1px solid red;
+
 }
 
 .buttonPrincipal {
@@ -80,8 +92,39 @@ a {
 
 }
 
-/* @media (max-width: 81.25rem) {
-  .sectionContainer {
-    padding: 0 1.5rem;
-  }
-} */
+.titleSection {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--black-50);
+  letter-spacing: 0.25rem;
+}
+
+.titleSection svg {
+  width: 4.75rem;
+}
+
+.descriptionSection {
+  font-family: var(--font-text);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--black-300);
+  max-width: 52ch;
+}
+
+
+@media (max-width: 37.5rem) {
+  .titleSection {
+   font-size: 2rem;
+  } 
+ 
+  .titleSection svg {
+   width: 3.5rem;
+ }
+ 
+ .descriptionSection {
+   font-size: 1rem;
+ }
+ }
