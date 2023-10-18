@@ -1,10 +1,6 @@
-/* .header { */
-  /* } */
-  
 .container {
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
   position: fixed;
   top: 0;
   left: 50%;
@@ -14,7 +10,7 @@
   justify-content: space-between;
   padding: 2rem 1.5rem;
   width: 100%;
-  max-width: 90rem;
+  max-width: 102.5rem;
 }
 
 .logo {
