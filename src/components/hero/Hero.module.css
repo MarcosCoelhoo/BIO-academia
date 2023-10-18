@@ -1,0 +1,96 @@
+.container {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  background: url('../../assets/images/hero-background.png') center center no-repeat;
+  background-size: cover;
+}
+
+.imgHero {
+  max-width: 35rem;
+}
+
+.imgHero img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  align-self: center;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25em;
+  width: fit-content;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  color: var(--black-50);
+  font-weight: 800;
+  letter-spacing: 0.25rem;
+  max-width: 52ch;
+}
+
+.title .textHighlight {
+  color: var(--principal-500);
+}
+
+.subtitle {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--black-300);
+  max-width: 52ch;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.button a {
+  color: var(--black-950);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.button a span {
+  font-weight: 700;
+}
+
+@media (max-width: 53.5rem) {
+  .container {
+    flex-direction: column;
+    gap: 3.5rem;
+    padding-top: 10rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    max-width: 32ch;
+  }
+
+  .button a {
+    font-size: 1.25rem;
+  }
+}

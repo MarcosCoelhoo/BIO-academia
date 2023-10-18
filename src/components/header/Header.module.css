@@ -1,14 +1,20 @@
+/* .header { */
+  /* } */
+  
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* border: 1px solid red; */
   position: fixed;
   top: 0;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, 0%);
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
   width: 100%;
   max-width: 90rem;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-  border-bottom: 2px solid var(--black-900);
 }
 
 .logo {
@@ -80,9 +86,9 @@
 }
 
 .iconMenu {
-  width: 2.75rem;
-  height: 2.75rem;
-  fill: var(--principal-500);
+  font-weight: 600;
+  font-size: 2.75rem;
+  color: var(--principal-500);
   cursor: pointer;
   user-select: none;
   display: none;
@@ -94,11 +100,12 @@
   }
 
   .logo {
-    width: 4.5rem;
+    width: 5rem;
   }
 
   .links {
     position: absolute;
+    z-index: 999;
     right: -65%;
     top: 0px;
     opacity: 0;
@@ -142,9 +149,9 @@
     color: var(--black-950);
   }
 
-  .close svg {
-    width: 1.75rem;
-    height: 1.75rem;
+  .close span {
+    font-weight: 700;
+    font-size: 1.75rem;
   }
   
   .link,
