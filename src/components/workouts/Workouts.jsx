@@ -9,7 +9,7 @@ const Workouts = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className="titleSection">
+        <h1 className={`${styles.title} titleSection`}>
           <IconWeight /> Bio Treinos
         </h1>
         <p className="descriptionSection">
