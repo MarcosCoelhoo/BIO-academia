@@ -2,16 +2,16 @@ import React from 'react';
 import { ReactComponent as IconWeight } from '../../assets/icons/gym-weight.svg';
 import { ReactComponent as IconInstagramLogo } from '../../assets/icons/instagram-logo.svg';
 import { ReactComponent as IconFacebookLogo } from '../../assets/icons/facebook-logo.svg';
-import styles from './Intructors.module.css';
 import imgFounder from '../../assets/images/founder-card.png';
 import imgInstructorCrossfit from '../../assets/images/instructor-crossfit.png';
 import imgInstructorFunctional from '../../assets/images/instructor-functional.png';
+import styles from './Intructors.module.css';
 
 const Instructors = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
-        <h1 className={`${styles.title} titleSection`}>
+      <div className="headerSection right">
+        <h1 className="titleSection right">
           Profissionais BIO <IconWeight />
         </h1>
         <p className="descriptionSection">
@@ -20,7 +20,7 @@ const Instructors = () => {
         </p>
       </div>
 
-      <ul className={styles.instructors}>
+      <ul className={styles.content}>
         <li className={styles.instructor}>
           <div className={styles.card}>
             <img

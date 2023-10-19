@@ -29,8 +29,7 @@ const Header = () => {
         <div className={`${styles.links} ${isMenuOpen ? styles.open : ''}`}>
           <div className={styles.close} onClick={toggleMenuMobile}>
             <p>Fechar</p>
-            {/* <IconClose /> */}
-            <span class="material-symbols-outlined">close</span>
+            <span className="material-symbols-outlined">close</span>
           </div>
           <a href="#" className={styles.link}>
             Preços
@@ -46,7 +45,7 @@ const Header = () => {
           </a>
         </div>
         <span
-          class={`${styles.iconMenu} material-symbols-outlined`}
+          className={`${styles.iconMenu} material-symbols-outlined`}
           onClick={toggleMenuMobile}
         >
           menu_open

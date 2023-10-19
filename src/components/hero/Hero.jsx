@@ -9,7 +9,6 @@ import { ReactComponent as LogoDymatize } from '../../assets/icons/dymatize-logo
 const Hero = () => {
   return (
     <>
-      {/* <section className="sectionContainer"> */}
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.info}>
@@ -29,7 +28,7 @@ const Hero = () => {
           <div className={styles.button}>
             <a className="buttonPrincipal" href="#">
               Quero mudar!
-              <span class="material-symbols-outlined">east</span>
+              <span className="material-symbols-outlined">east</span>
             </a>
           </div>
         </div>
@@ -55,7 +54,6 @@ const Hero = () => {
           <LogoDymatize />
         </li>
       </ul>
-      {/* </section> */}
     </>
   );
 };
