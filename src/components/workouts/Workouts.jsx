@@ -8,8 +8,8 @@ import imgCrossfit from '../../assets/images/crossfit.png';
 const Workouts = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
-        <h1 className={`${styles.title} titleSection`}>
+      <div className="headerSection left">
+        <h1 className="titleSection left">
           <IconWeight /> Bio Treinos
         </h1>
         <p className="descriptionSection">
@@ -18,7 +18,7 @@ const Workouts = () => {
         </p>
       </div>
 
-      <ul className={styles.workoutsList}>
+      <ul className={styles.content}>
         <li className={styles.training}>
           <h2 className={styles.name}>Musculação</h2>
 

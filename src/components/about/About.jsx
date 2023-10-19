@@ -11,8 +11,8 @@ const About = () => {
       </div>
 
       <div className={styles.content}>
-        <div className={styles.info}>
-          <h1 className="titleSection">
+        <div className="headerSection left">
+          <h1 className="titleSection left">
             <IconWeight /> A BIO
           </h1>
           <p className="descriptionSection">
@@ -26,7 +26,7 @@ const About = () => {
         <div className={styles.buttonContainer}>
           <a href="#" className={`${styles.button} buttonPrincipal`}>
             Quero entrar!
-            <span class="material-symbols-outlined">east</span>
+            <span className="material-symbols-outlined">east</span>
           </a>
         </div>
       </div>
