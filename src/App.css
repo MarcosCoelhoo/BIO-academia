@@ -48,7 +48,7 @@
 body {
   background: var(--black-950);
   overflow-x: hidden;
-  margin-bottom: 600px;
+  padding-bottom: 3rem;
 }
 
 main {
