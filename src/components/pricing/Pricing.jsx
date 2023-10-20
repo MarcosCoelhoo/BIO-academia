@@ -68,6 +68,9 @@ const Pricing = () => {
         </li>
 
         <li className={`${styles.card} ${styles.recommended}`}>
+          <span className={styles.recommendedDecoration}>
+            <p>Recomendado</p>
+          </span>
           <div className={styles.infos}>
             <h2 className={styles.name}>Plano strong</h2>
             <div className={styles.priceContainer}>
