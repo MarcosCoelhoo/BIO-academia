@@ -25,8 +25,11 @@
   --black-900: #292929;
   --black-950: #0D0D0D;
 
+  --red: #FF601C;
+
   --principal-gradient: linear-gradient(to bottom, var(--principal-500), var(--principal-600));
   --black-gradient: linear-gradient(to bottom, var(--black-700), var(--black-900));
+  --red-gradient: linear-gradient(to bottom, #FB6C2F, #DA4A0C);
 
   --shadow-12: 12px 12px 0 0 var(--principal-500);
   --shadow-8: 8px 8px 0 0 var(--principal-500);

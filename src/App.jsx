@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero';
 import Instructors from './components/instructors/Instructors';
 import Location from './components/location/Location';
 import Pricing from './components/pricing/Pricing';
+import Time from './components/time/Time';
 import Workouts from './components/workouts/Workouts';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Instructors />
         <Pricing />
         <Location />
+        <Time />
       </main>
     </>
   );
