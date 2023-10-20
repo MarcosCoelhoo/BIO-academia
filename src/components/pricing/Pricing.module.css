@@ -28,11 +28,10 @@
   position: relative;
 }
 
-.recommended::after {
-  content: 'Recomendado';
+.recommendedDecoration {
   font-family: var(--font-text);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.25rem;
   padding: 0.25rem 0.5rem;
   background: var(--black-50);
@@ -40,6 +39,16 @@
   top: -20px;
   left: 50%;
   transform: translate(-50%, 0%);
+}
+
+.recommendedDecoration p {
+  background-image: var(--principal-gradient);
+  
+  background-clip: text;
+  -webkit-background-clip: text; 
+
+  -webkit-text-fill-color: transparent;
+
   color: var(--principal-600);
 }
 
