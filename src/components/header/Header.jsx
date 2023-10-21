@@ -4,6 +4,8 @@ import { ReactComponent as BioLogo } from '../../assets/icons/bio-logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isScroll, setIsScroll] = React.useState(false);
+  const headerRef = React.useRef(null);
 
   const toggleMenuMobile = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,8 +19,25 @@ const Header = () => {
     document.body.style.overflowY = 'hidden';
   };
 
+  React.useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        setIsScroll(true);
+
+        return true;
+      }
+
+      setIsScroll(false);
+    });
+
+    return window.removeEventListener('scroll', window);
+  });
+
   return (
-    <header className={styles.container}>
+    <header
+      className={`${styles.container} ${isScroll ? styles.scroll : ''}`}
+      ref={headerRef}
+    >
       <div className={styles.logo}>
         <a href="/">
           <BioLogo />
