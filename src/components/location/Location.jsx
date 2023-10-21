@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Location.module.css';
 import { ReactComponent as IconWeight } from '../../assets/icons/gym-weight.svg';
-import imgMap from '../../assets/images/localization.png';
 
 const Location = () => {
   return (

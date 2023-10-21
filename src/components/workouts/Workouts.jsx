@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Workouts.module.css';
 import { ReactComponent as IconWeight } from '../../assets/icons/gym-weight.svg';
-import imgBodybuilding from '../../assets/images/bodybuilding.png';
-import imgFuncitional from '../../assets/images/functional.png';
-import imgCrossfit from '../../assets/images/crossfit.png';
+import imgBodybuilding from '../../assets/images/bodybuilding.webp';
+import imgFuncitional from '../../assets/images/functional.webp';
+import imgCrossfit from '../../assets/images/crossfit.webp';
 
 const Workouts = () => {
   return (
@@ -23,7 +23,11 @@ const Workouts = () => {
           <h2 className={styles.name}>Musculação</h2>
 
           <div className={styles.image}>
-            <img src={imgBodybuilding} alt="" />
+            <img
+              src={imgBodybuilding}
+              alt="Homem treinando musculação"
+              loading="lazy"
+            />
           </div>
 
           <a href="#" className={styles.button}>
@@ -35,7 +39,11 @@ const Workouts = () => {
           <h2 className={styles.name}>Funcional</h2>
 
           <div className={styles.image}>
-            <img src={imgFuncitional} alt="" />
+            <img
+              src={imgFuncitional}
+              alt="Mulher treinando treino funcional"
+              loading="lazy"
+            />
           </div>
 
           <a href="#" className={styles.button}>
@@ -47,7 +55,11 @@ const Workouts = () => {
           <h2 className={styles.name}>Crossfit</h2>
 
           <div className={styles.image}>
-            <img src={imgCrossfit} alt="" />
+            <img
+              src={imgCrossfit}
+              alt="Homem fazendo uma execução de crossfit"
+              loading="lazy"
+            />
           </div>
 
           <a href="#" className={styles.button}>

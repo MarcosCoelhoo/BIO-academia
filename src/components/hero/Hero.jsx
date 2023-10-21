@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css';
-import imgHero from '../../assets/images/hero-person.png';
+import imgHero from '../../assets/images/hero-person.webp';
 import { ReactComponent as LogoSklz } from '../../assets/icons/SKLZ-logo.svg';
 import { ReactComponent as LogoOptimumNutrition } from '../../assets/icons/optimum-nutrition-logo.svg';
 import { ReactComponent as LogoNaturesWay } from '../../assets/icons/natures-way-logo.svg';
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <div className={styles.imgHero}>
-          <img src={imgHero} alt="Person hero section" />
+          <img src={imgHero} alt="Person hero section" loading="lazy" />
         </div>
       </div>
       <ul className={styles.brandings}>

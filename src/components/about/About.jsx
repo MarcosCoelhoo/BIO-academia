@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './About.module.css';
-import imgFounder from '../../assets/images/founder.png';
+import imgFounder from '../../assets/images/founder.webp';
 import { ReactComponent as IconWeight } from '../../assets/icons/gym-weight.svg';
 
 const About = () => {
   return (
     <section className={styles.container}>
       <div className={styles.image}>
-        <img src={imgFounder} alt="Imagem fundador BIO" />
+        <img src={imgFounder} alt="Imagem fundador BIO" loading="lazy" />
       </div>
 
       <div className={styles.content}>
