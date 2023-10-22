@@ -44,6 +44,7 @@ const Header = () => {
     <header
       className={`${styles.container} ${isScroll ? styles.scroll : ''}`}
       ref={headerRef}
+      id="header"
     >
       <div className={styles.logo}>
         <a href="/">

@@ -29,7 +29,7 @@ const BENEFITS = {
 const Pricing = () => {
   return (
     <section className={styles.container} id="pricing">
-      <div className="headerSection left">
+      <div className="headerSection left" data-aos="fade-right">
         <h1 className="titleSection left">
           <IconWeight /> Planos BIO
         </h1>
@@ -40,9 +40,10 @@ const Pricing = () => {
       </div>
 
       <ul className={styles.cards}>
-        <li className={styles.card}>
+        <li className={styles.card} data-aos="fade-up" data-aos-delay="200">
           <div className={styles.infos}>
             <h2 className={styles.name}>Plano básico</h2>
+
             <div className={styles.priceContainer}>
               <h3 className={styles.price}>
                 79<span className={styles.cents}>,99</span>
@@ -67,7 +68,11 @@ const Pricing = () => {
           </a>
         </li>
 
-        <li className={`${styles.card} ${styles.recommended}`}>
+        <li
+          className={`${styles.card} ${styles.recommended}`}
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <span className={styles.recommendedDecoration}>
             <p>Recomendado</p>
           </span>
@@ -97,7 +102,7 @@ const Pricing = () => {
           </a>
         </li>
 
-        <li className={styles.card}>
+        <li className={styles.card} data-aos="fade-up" data-aos-delay="300">
           <div className={styles.infos}>
             <h2 className={styles.name}>Plano premium</h2>
             <div className={styles.priceContainer}>
