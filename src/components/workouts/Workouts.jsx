@@ -8,7 +8,7 @@ import imgCrossfit from '../../assets/images/crossfit.webp';
 const Workouts = () => {
   return (
     <section className={styles.container} id="workouts">
-      <div className="headerSection left">
+      <div className="headerSection left" data-aos="fade-right">
         <h1 className="titleSection left">
           <IconWeight /> Bio Treinos
         </h1>
@@ -19,7 +19,7 @@ const Workouts = () => {
       </div>
 
       <ul className={styles.content}>
-        <li className={styles.training}>
+        <li className={styles.training} data-aos="fade-up">
           <h2 className={styles.name}>Musculação</h2>
 
           <div className={styles.image}>
@@ -30,12 +30,18 @@ const Workouts = () => {
             />
           </div>
 
-          <a href="#" className={styles.button}>
-            Quero treinar!
-          </a>
+          <div
+            className={styles.buttonContainer}
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <a href="#" className={styles.button}>
+              Quero treinar!
+            </a>
+          </div>
         </li>
 
-        <li className={styles.training}>
+        <li className={styles.training} data-aos="fade-up" data-aos-delay="100">
           <h2 className={styles.name}>Funcional</h2>
 
           <div className={styles.image}>
@@ -46,12 +52,18 @@ const Workouts = () => {
             />
           </div>
 
-          <a href="#" className={styles.button}>
-            Quero treinar!
-          </a>
+          <div
+            className={styles.buttonContainer}
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <a href="#" className={styles.button}>
+              Quero treinar!
+            </a>
+          </div>
         </li>
 
-        <li className={styles.training}>
+        <li className={styles.training} data-aos="fade-up" data-aos-delay="200">
           <h2 className={styles.name}>Crossfit</h2>
 
           <div className={styles.image}>
@@ -62,9 +74,15 @@ const Workouts = () => {
             />
           </div>
 
-          <a href="#" className={styles.button}>
-            Quero treinar!
-          </a>
+          <div
+            className={styles.buttonContainer}
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <a href="#" className={styles.button}>
+              Quero treinar!
+            </a>
+          </div>
         </li>
       </ul>
     </section>

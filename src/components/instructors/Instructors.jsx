@@ -10,7 +10,7 @@ import styles from './Intructors.module.css';
 const Instructors = () => {
   return (
     <section className={styles.container}>
-      <div className="headerSection right">
+      <div className="headerSection right" data-aos="fade-left">
         <h1 className="titleSection right">
           Profissionais BIO <IconWeight />
         </h1>
@@ -21,7 +21,7 @@ const Instructors = () => {
       </div>
 
       <ul className={styles.content}>
-        <li className={styles.instructor}>
+        <li className={styles.instructor} data-aos="fade-right">
           <div className={styles.card}>
             <img
               src={imgFounder}
@@ -38,17 +38,31 @@ const Instructors = () => {
             </div>
           </div>
           <div className={styles.socials}>
-            <a href="#" className={styles.social}>
+            <a
+              href="#"
+              className={styles.social}
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <IconInstagramLogo />
             </a>
-            <a href="#" className={styles.social}>
+            <a
+              href="#"
+              className={styles.social}
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <IconFacebookLogo />
             </a>
           </div>
         </li>
 
         <li className={styles.instructor}>
-          <div className={styles.card}>
+          <div
+            className={styles.card}
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src={imgInstructorCrossfit}
               alt="Imagem do Instrutor de Crossift"
@@ -62,17 +76,31 @@ const Instructors = () => {
             </div>
           </div>
           <div className={styles.socials}>
-            <a href="#" className={styles.social}>
+            <a
+              href="#"
+              className={styles.social}
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <IconInstagramLogo />
             </a>
-            <a href="#" className={styles.social}>
+            <a
+              href="#"
+              className={styles.social}
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <IconFacebookLogo />
             </a>
           </div>
         </li>
 
         <li className={styles.instructor}>
-          <div className={styles.card}>
+          <div
+            className={styles.card}
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img
               src={imgInstructorFunctional}
               alt="Imagem da instrutora de Treino Funcional"
@@ -88,10 +116,20 @@ const Instructors = () => {
             </div>
           </div>
           <div className={styles.socials}>
-            <a href="#" className={styles.social}>
+            <a
+              href="#"
+              className={styles.social}
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <IconInstagramLogo />
             </a>
-            <a href="#" className={styles.social}>
+            <a
+              href="#"
+              className={styles.social}
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <IconFacebookLogo />
             </a>
           </div>
