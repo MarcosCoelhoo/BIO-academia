@@ -7,7 +7,7 @@ import imgCrossfit from '../../assets/images/crossfit.webp';
 
 const Workouts = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="workouts">
       <div className="headerSection left">
         <h1 className="titleSection left">
           <IconWeight /> Bio Treinos

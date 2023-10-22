@@ -32,7 +32,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className={styles.navBox}>
+        <div className={styles.navBox} id="contact">
           <h2 className={styles.title}>Fale com a gente</h2>
 
           <ul className={styles.links}>

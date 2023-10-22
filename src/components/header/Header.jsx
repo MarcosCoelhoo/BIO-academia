@@ -7,6 +7,13 @@ const Header = () => {
   const [isScroll, setIsScroll] = React.useState(false);
   const headerRef = React.useRef(null);
 
+  const handleInnerLink = () => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+      document.body.style.overflowY = 'auto';
+    }
+  };
+
   const toggleMenuMobile = () => {
     setIsMenuOpen(!isMenuOpen);
 
@@ -50,13 +57,16 @@ const Header = () => {
             <p>Fechar</p>
             <span className="material-symbols-outlined">close</span>
           </div>
-          <a href="#" className={styles.link}>
+          <a href="#pricing" className={styles.link} onClick={handleInnerLink}>
             Preços
           </a>
-          <a href="#" className={styles.link}>
+          <a href="#workouts" className={styles.link} onClick={handleInnerLink}>
+            Treinos
+          </a>
+          <a href="#contact" className={styles.link} onClick={handleInnerLink}>
             Contato
           </a>
-          <a href="#" className={styles.link}>
+          <a href="#about" className={styles.link} onClick={handleInnerLink}>
             Quem somos
           </a>
           <a href="#" className={styles.highlight}>

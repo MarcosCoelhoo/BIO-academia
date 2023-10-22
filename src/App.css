@@ -45,6 +45,11 @@
   box-sizing: border-box; 
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
 body {
   background: var(--black-950);
   overflow-x: hidden;

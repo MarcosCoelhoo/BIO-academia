@@ -28,7 +28,7 @@ const BENEFITS = {
 
 const Pricing = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="pricing">
       <div className="headerSection left">
         <h1 className="titleSection left">
           <IconWeight /> Planos BIO
