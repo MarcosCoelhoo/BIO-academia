@@ -5,7 +5,7 @@ import { ReactComponent as IconWeight } from '../../assets/icons/gym-weight.svg'
 
 const About = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="about">
       <div className={styles.image}>
         <img src={imgFounder} alt="Imagem fundador BIO" loading="lazy" />
       </div>
