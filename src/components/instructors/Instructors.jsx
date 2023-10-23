@@ -10,7 +10,7 @@ import styles from './Intructors.module.css';
 const Instructors = () => {
   return (
     <section className={styles.container}>
-      <div className="headerSection right" data-aos="fade-left">
+      <div className="headerSection right">
         <h1 className="titleSection right">
           Profissionais BIO <IconWeight />
         </h1>

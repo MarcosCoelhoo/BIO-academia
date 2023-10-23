@@ -103,7 +103,10 @@
 
   .content {
     align-items: center;
+    text-align: center;
   }
+
+
 
   .feedback {
     width: 100%;

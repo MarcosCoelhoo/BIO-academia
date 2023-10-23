@@ -15,7 +15,7 @@ const Time = () => {
 
       <div
         className={`${styles.feedback} ${styles['close']}`}
-        data-aos="fade-left"
+        data-aos="fade-up"
         data-aos-delay="100"
       >
         <h2 className={styles.feedbackText}>Fechado</h2>

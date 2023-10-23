@@ -12,14 +12,10 @@ const About = () => {
 
       <div className={styles.content}>
         <div className="headerSection left">
-          <h1 className="titleSection left" data-aos="fade-left">
+          <h1 className="titleSection left">
             <IconWeight /> A BIO
           </h1>
-          <p
-            className="descriptionSection"
-            data-aos="fade-left"
-            data-aos-delay="100"
-          >
+          <p className="descriptionSection" data-aos-delay="100">
             A Academia BIO é o seu destino para uma transformação completa. Com
             instrutores altamente qualificados, equipamentos de última geração,
             estamos empenhados em ajudá-lo a atingir seus objetivos de saúde e
@@ -29,8 +25,8 @@ const About = () => {
 
         <div
           className={styles.buttonContainer}
-          data-aos="fade-left"
-          data-aos-delay="200"
+          // data-aos-delay="100"
+          // data-aos="fade-left"
         >
           <a href="#" className={`${styles.button} buttonPrincipal`}>
             Quero entrar!

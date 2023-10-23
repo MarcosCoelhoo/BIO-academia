@@ -12,7 +12,11 @@ const Hero = () => {
     <>
       <div className={styles.container}>
         <div className={styles.content}>
-          <div className={styles.info} data-aos="fade-right">
+          <div
+            className={styles.info}
+            data-aos="fade-right"
+            data-aos-once="true"
+          >
             <h1 className={styles.title}>
               <span className={styles.textHighlight}>Transforme-se.</span>
               <br />
@@ -28,8 +32,8 @@ const Hero = () => {
 
           <div
             className={styles.button}
-            data-aos="fade-right"
             data-aos-delay="300"
+            data-aos="fade-right"
           >
             <a className="buttonPrincipal" href="#">
               Quero mudar!
@@ -38,7 +42,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className={styles.imgHero} data-aos="fade-left">
+        <div
+          className={styles.imgHero}
+          data-aos="fade-left"
+          data-aos-once="true"
+        >
           <img src={imgHero} alt="Person hero section" loading="lazy" />
         </div>
       </div>

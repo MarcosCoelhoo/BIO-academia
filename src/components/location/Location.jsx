@@ -5,7 +5,7 @@ import { ReactComponent as IconWeight } from '../../assets/icons/gym-weight.svg'
 const Location = () => {
   return (
     <section className={styles.container}>
-      <div className="headerSection right" data-aos="fade-left">
+      <div className="headerSection right">
         <h1 className="titleSection right">
           Venha nos conhecer <IconWeight />
         </h1>
