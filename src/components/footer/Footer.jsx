@@ -15,19 +15,22 @@ const Footer = () => {
 
           <ul className={styles.links}>
             <li className={styles.link}>
-              <a href="#">Início</a>
+              <a href="/">Início</a>
             </li>
             <li className={styles.link}>
-              <a href="#">A BIO</a>
+              <a href="#about">A BIO</a>
             </li>
             <li className={styles.link}>
-              <a href="#">BIO Treinos</a>
+              <a href="#workouts">BIO Treinos</a>
             </li>
             <li className={styles.link}>
-              <a href="#">Profissionais BIO</a>
+              <a href="#instructors">Profissionais BIO</a>
             </li>
             <li className={styles.link}>
-              <a href="#">Planos BIO</a>
+              <a href="#pricing">Planos BIO</a>
+            </li>
+            <li className={styles.link}>
+              <a href="#location">Localização</a>
             </li>
           </ul>
         </div>

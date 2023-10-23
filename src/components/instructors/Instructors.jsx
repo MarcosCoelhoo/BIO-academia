@@ -9,7 +9,7 @@ import styles from './Intructors.module.css';
 
 const Instructors = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="instructors">
       <div className="headerSection right">
         <h1 className="titleSection right">
           Profissionais BIO <IconWeight />

@@ -16,7 +16,7 @@ function App() {
   React.useEffect(() => {
     Aos.init({
       duration: 500,
-      offset: 200,
+      offset: 100,
       // startEvent: 'load',
     });
   }, []);
