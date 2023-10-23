@@ -29,7 +29,7 @@ const BENEFITS = {
 const Pricing = () => {
   return (
     <section className={styles.container} id="pricing">
-      <div className="headerSection left" data-aos="fade-right">
+      <div className="headerSection left">
         <h1 className="titleSection left">
           <IconWeight /> Planos BIO
         </h1>
