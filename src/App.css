@@ -43,6 +43,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+  outline: 1px solid red;
 }
 
 html {
@@ -51,12 +52,14 @@ html {
 }
 
 body {
+  min-width: fit-content;
   background: var(--black-950);
   overflow-x: hidden;
   padding-bottom: 3rem;
 }
 
 main {
+  
   padding: 4rem 1.5rem;
   display: flex;
   flex-direction: column;

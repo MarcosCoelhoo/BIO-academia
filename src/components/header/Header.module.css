@@ -12,6 +12,7 @@
   max-width: 102.5rem;
 
   transition: all .3s;
+
 }
 
 .container.scroll {
@@ -109,7 +110,6 @@
   }
 
   .linksContainer {
-    border: 1px solid red;
     
     right: 0;
     top: 0;
@@ -118,12 +118,8 @@
     background: rgba(10, 10, 10, .5);
   }
   
-  .linksContainer.open {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .links {
+    /* display: none; */
     opacity: 0;
     position: absolute;
     z-index: 999;
