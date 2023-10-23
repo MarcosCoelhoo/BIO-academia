@@ -4,16 +4,14 @@
   position: fixed;
   top: 0;
   left: 50%;
-  z-index: 10;
   transform: translate(-50%, 0%);
-  margin: 0 auto;
+  z-index: 10;
   justify-content: space-between;
   padding: 2rem 1.5rem;
-  width: 100%;
+  width: 100vw;
   max-width: 102.5rem;
 
   transition: all .3s;
-
 }
 
 .container.scroll {
@@ -102,7 +100,8 @@
 
 @media (max-width: 50rem) {
   .container {
-    right: 0;
+    left: 0%;
+    transform: inherit;
   }
 
   .logo {
@@ -149,20 +148,6 @@
     right: 0%;
     opacity: 1;
     display: flex;
-  }
-  
- 
-
-  @media showMenu {
-    from {
-      opacity: 0;
-      transform: translateX(90%)
-    }
-
-    to {
-      opacity: 1;
-      transform: translateX(0%)
-    }
   }
  
   .close {
