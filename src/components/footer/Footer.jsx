@@ -59,7 +59,12 @@ const Footer = () => {
         </p>
         <p className={styles.text}>
           Acesse meu
-          <a href="#" className={styles.github}>
+          <a
+            href="https://github.com/MarcosCoelhoo"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.github}
+          >
             Github
           </a>
         </p>
