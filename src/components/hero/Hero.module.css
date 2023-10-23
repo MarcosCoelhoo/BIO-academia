@@ -82,6 +82,8 @@
   margin: 0 auto;
   height: 5.5rem;
   position: relative;
+  overflow: hidden;
+
 }
 
 .brandings {
@@ -95,8 +97,7 @@
   padding: 0 1.5rem;
   align-items: center;
   justify-content: space-between;
-
-
+  overflow: hidden;
   animation: slideBrandings 15s linear infinite;
 }
 
