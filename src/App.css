@@ -43,7 +43,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
-  /* outline: 1px solid red; */
+  user-select: var(--principal-500);
+}
+
+*::selection {
+  color: var(--black-50);
+  background: var(--principal-500);
 }
 
 html {
