@@ -19,7 +19,7 @@
 ## Ferramentas usadas para construção do site
 
 - React
-- Lib [OAS](https://github.com/michalsnik/aos){:target="\_blank"} para animar as seções do site
+- Lib [OAS](https://github.com/michalsnik/aos) para animar as seções do site
 - CSS Puro
 - VSCode
 - Figma
